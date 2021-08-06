@@ -30,8 +30,8 @@ function onMouseMove(event){
     }
 }
 
-function onMouseDown(event){
-    painting = true;
+function handleColorClick(event){
+    console.log(event.target.style);
 }
 
 if (canvas){
@@ -41,4 +41,4 @@ if (canvas){
     canvas.addEventListener("mouseleave", stopPainting);
 }
 
-console.log(Array.from(colors));
+Array.from(colors).forEach(color => color.addEventListener("click", handleColorClick));
