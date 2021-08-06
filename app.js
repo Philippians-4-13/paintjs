@@ -41,4 +41,4 @@ if (canvas){
     canvas.addEventListener("mouseleave", stopPainting);
 }
 
-console.log(colors);
+console.log(Array.from(colors));
